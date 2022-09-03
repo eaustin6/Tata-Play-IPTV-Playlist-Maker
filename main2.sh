@@ -5,7 +5,7 @@ NC='\033[0m'
 
 info()
 {
-    printf "\n                                  -- Tata Play IPTV Playlist AutoUpdater --"
+    printf "\n                                     -- Tata Play IPTV Playlist Maker --"
     printf "\n                                             Author: Mobassar4u\n"
     printf "\n                              -- GitHub Profile: https://github.com/Mobassar4u --"
     printf '\n'
@@ -160,7 +160,7 @@ ask_direct_login()
 
 check_if_repo_exists()
 {
-    check_repo=$(curl -i -s -H "Authorization: token $git_token"     https://api.github.com/user/repos | grep 'Tata-Play-IPTV-Playlist-2-Daily-Workflow') || true
+    check_repo=$(curl -i -s -H "Authorization: token $git_token"     https://api.github.com/user/repos | grep 'Tata-Play-IPTV-Playlist-2-Daily-Generator') || true
     if [[ -n $check_repo ]]; then
     repo_exists='true'
     ask_user_to_select;
@@ -171,7 +171,7 @@ check_if_repo_exists()
 
 ask_user_to_select()
 {
-    printf "\n Repo named 'Tata-Play-IPTV-Playlist-2-Daily-Workflow' already exists, What would you like to perform? \n\n"
+    printf "\n Repo named 'Tata-Play-IPTV-Playlist-2-Daily-Generator' already exists, What would you like to perform? \n\n"
     echo "   1. Re-run the script & update my repo with same playlist."
     echo "   2. Maintain other playlist with another Tata Play IPTV Account"
     echo "   3. Generate new playlist with new link"
@@ -190,7 +190,7 @@ ask_user_to_select()
 take_vars_from_existing_repo()
 {
     if [[ $selection == '1' ]]; then
-    dir="$(curl -s "https://$git_token@raw.githubusercontent.com/$git_id/Tata-Play-IPTV-Playlist-2-Daily-Workflow/main/.github/workflows/Tata-Play-IPTV-Playlist-2-Daily-Workflow.yml" | perl -p -e 's/\r//g' | grep 'gist' | sed 's/.*\///g')"
+    dir="$(curl -s "https://$git_token@raw.githubusercontent.com/$git_id/Tata-Play-IPTV-Playlist-2-Daily-Generator/main/.github/workflows/Tata-Play-IPTV-Playlist-2-Daily-Workflow.yml" | perl -p -e 's/\r//g' | grep 'gist' | sed 's/.*\///g')"
     gist_url="https://$git_token@gist.github.com/$dir"
     fi
 }
@@ -248,7 +248,7 @@ create_gist()
     gist_url=$(cat gist_link.txt)
     dir="${gist_url##*/}"
     rm TataPlayPlaylist.m3u gist_link.txt
-    gh repo create Tata-Play-IPTV-Playlist-2-Daily-Workflow --private -y >> /dev/null 2>&1 || true
+    gh repo create Tata-Play-IPTV-Playlist-2-Daily-Generator --private -y >> /dev/null 2>&1 || true
     fi
 }
 
@@ -300,7 +300,7 @@ main()
     cd ../..
     echo "code_samples/__pycache__" > .gitignore && echo "TataPlayPlaylist.m3u" >> .gitignore && echo "userSubscribedChannels.json" >> .gitignore
     git remote remove origin
-    git remote add origin "https://$git_token@github.com/$git_id/Tata-Play-IPTV-Playlist-2-Daily-Workflow.git"
+    git remote add origin "https://$git_token@github.com/$git_id/Tata-Play-IPTV-Playlist-2-Daily-Generator.git"
     dynamic_push;
     git clone ${gist_url} >> /dev/null 2>&1
     cd ${dir} && rm TataPlayPlaylist.m3u && mv ../code_samples/TataPlayPlaylist.m3u .
@@ -308,8 +308,8 @@ main()
     git commit -m "Initial Playlist Upload"
     git push >> /dev/null 2>&1 || { tput setaf 9; printf 'Something went wrong!\n ERROR Code: 65x00a\n'; exit 1; }
     save_creds;
-    tput setaf 51; echo "Successfully created your new private repo." && printf "Check your new private repo here: ${NC}https://github.com/$git_id/Tata-Play-IPTV-Playlist-2-Daily-Workflow\n" && tput setaf 51; printf "Check Your Playlist URL here: ${NC}https://gist.githubusercontent.com/$git_id/$dir/raw/TataPlayPlaylist.m3u \n"
-    if [[ "$selection" == '2' ]]; then tput setaf 51; echo -e "Check your other playlist branch here: ${NC}https://github.com/$git_id/Tata-Play-IPTV-Playlist-2-Daily-Workflow/tree/$dir"; fi
+    tput setaf 51; echo "Successfully created your new private repo." && printf "Check your new private repo here: ${NC}https://github.com/$git_id/Tata-Play-IPTV-Playlist-2-Daily-Generator\n" && tput setaf 51; printf "Check Your Playlist URL here: ${NC}https://gist.githubusercontent.com/$git_id/$dir/raw/TataPlayPlaylist.m3u \n"
+    if [[ "$selection" == '2' ]]; then tput setaf 51; echo -e "Check your other playlist branch here: ${NC}https://github.com/$git_id/Tata-Play-IPTV-Playlist-2-Daily-Generator/tree/$dir"; fi
     tput setaf 51; printf "You can directly paste this URL in TiviMate/OTT Navigator now, No need to remove hashcode\n"
     tput bold; printf "\n\nFor Privacy Reasons, Never Share your GitHub Tokens, Tata Play IPTV India Account Credentials and Playlist URL To Anyone. \n"
     tput setaf 51; printf "Using this script for Commercial uses is not permitted. \n\n"
