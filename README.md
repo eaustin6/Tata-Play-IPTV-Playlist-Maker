@@ -109,7 +109,7 @@ The tokens, GitHub Email, and ID are required because we are basically creating 
 
 ## 📝 Original Credits :
 
-* © 2022 [ Who Created ] - For This Tata Play IPTV India Playlist Auto-Updater Script Repo
+* © 2022 [ Who Created ] - For This Tata Play IPTV India Playlist Maker Script Repo
 * GitHub for their GitHub Actions
 * [ Me ] - For Modifying Something 😅
 
