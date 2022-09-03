@@ -1,4 +1,4 @@
-name: Tata Play IPTV Playlist 1 Daily Workflow
+name: Tata Play IPTV Playlist 1 Daily Generator
 on:
  schedule:
    - cron: "00 11  * * *"
@@ -15,10 +15,10 @@ jobs:
       run: |
             git config --global user.name "$git_id"
             git config --global user.email "$git_mail"
-            git clone https://$git_token@github.com/$git_id/Tata-Play-IPTV-Playlist-1-Daily-Workflow
-            cd Tata-Play-IPTV-Playlist-1-Daily-Workflow/           
+            git clone https://$git_token@github.com/$git_id/Tata-Play-IPTV-Playlist-1-Daily-Generator
+            cd Tata-Play-IPTV-Playlist-1-Daily-Generator/           
             cd code_samples/
-            curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-Playlist-AutoUpdater/main/dependencies/post_script.exp' > script.exp
+            curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-Playlist-Maker/main/dependencies/post_script.exp' > script.exp
             curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-India/main/code_samples/allChannels.json' > allChannels.json
             chmod 755 *
             sudo apt-get install expect -y
