@@ -199,7 +199,7 @@ ask_playlist_type()
 {
     printf "\nWhich type of playlist would you like to have? \n\n"
     echo "  1. Kodi & TiviMate Compatible"
-    printf "  2. TiviMate & OTT Navigator Compatible\n\n"
+    printf "  2. TiviMate & OTT Navigator Compatible"
     read -p "Select from the options above: " playlist_type;
     while true; do
     case $playlist_type in
