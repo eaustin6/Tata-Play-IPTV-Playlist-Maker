@@ -277,9 +277,7 @@ main()
     check_if_repo_exists;
     git clone https://github.com/Mobassar4u/Tata-Play-IPTV-India >> /dev/null 2>&1 || { rm -rf Tata-Play-IPTV-India; git clone https://github.com/Mobassar4u/Tata-Play-IPTV-India; } 
     cd Tata-Play-IPTV-India/code_samples/
-    mv $LOCALDIR/userDetails.json .
-    if [[ "$playlist_type" == '1' ]]; then
-    echo "$wait Selected Playlist Type: Kodi & TiviMate Compatible\n\n"
+    mv $LOCALDIR/userDetails.json .    
     if [[ "$playlist_type" == '2' ]]; then
     echo "$wait Selected Playlist Type: TiviMate & OTT Navigator Compatible\n\n"
     git revert --no-commit 25976fd59ac0a7e937a04b76e54e5eee604423f4; fi
