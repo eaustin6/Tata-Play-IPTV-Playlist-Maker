@@ -1,7 +1,7 @@
 <p align="center"><img src="https://www.tataplay.com/s3-api/v1/assets/others/intro-image-desktop.png" ></p>
 
 
-# Tata Play IPTV India Playlist AutoUpdater Script
+# Tata Play IPTV India Playlist Maker Script
 ### A Script To Create a Daily Workflow Repo On GitHub The GitHub Actions Every Day To Update The Tata Play IPTV Playlist In Every 24 Hrs, From Your Terminal That First One-Time Setup! Then Enjoy 🥰🥰🥰
 
 
