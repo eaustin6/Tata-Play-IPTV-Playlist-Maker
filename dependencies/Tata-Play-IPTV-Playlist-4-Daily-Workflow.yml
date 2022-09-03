@@ -1,4 +1,4 @@
-name: Tata Play IPTV Playlist 4 Daily Generator
+name: Tata Play IPTV Playlist 4 Daily Workflow
 on:
  schedule:
    - cron: "00 11  * * *"
