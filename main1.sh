@@ -203,7 +203,7 @@ ask_playlist_type()
     read -p "Select from the options above: " playlist_type;
     while true; do
     case $playlist_type in
-    '1')echo "Option 1 chosen"; break;;
+    '1')echo "Option 1 kodi"; break;;
     '2')echo "Option 2 chosen"; break;;
     *)echo "Invalid option chosen, Please try again...";;
     esac
