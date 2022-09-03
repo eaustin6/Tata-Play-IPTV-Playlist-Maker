@@ -5,7 +5,7 @@ NC='\033[0m'
 
 info()
 {
-    printf "\n                                      -- Tata Play IPTV Playlist Maker --"
+    printf "\n                                     -- Tata Play IPTV Playlist Maker --"
     printf "\n                                             Author: Mobassar4u\n"
     printf "\n                              -- GitHub Profile: https://github.com/Mobassar4u --"
     printf '\n'
