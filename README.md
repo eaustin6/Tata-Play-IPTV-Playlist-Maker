@@ -20,70 +20,70 @@ Choose Your Option When You Generate Your IPTV Playlist
 ## How to use? User-1
 * Copy the below script and paste it in the terminal:
 ```bash
-bash <(curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-Playlist-AutoUpdater/main/curl1.sh')
+bash <(curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-Playlist-Maker/main/curl1.sh')
 ```
 * Now, Enter the required details asked there.
 * Please wait until the script does the job for you.
 * And That's it there you go, After a few seconds, you'll be greeted with a new repo and your playlist URL created in your account that makes the job of updating the playlist every day.
 * Now if you want to reuse the script again, Just simply run the following command 
 ```bash
-cd && cd Tata-Play-IPTV-Playlist-AutoUpdater; bash main1.sh
+cd && cd Tata-Play-IPTV-Playlist-Maker; bash main1.sh
 ```
 Now you don't need to touch anything, It updates the playlist on its own every day and you only need to Update the playlist in Tivimate.
 All the steps above are to be done only once. Please Star my repo if you've liked my work! :)
 ## How to use? User-2
 * Copy the below script and paste it in the terminal:
 ```bash
-bash <(curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-Playlist-AutoUpdater/main/curl2.sh')
+bash <(curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-Playlist-Maker/main/curl2.sh')
 ```
 * Now, Enter the required details asked there.
 * Please wait until the script does the job for you.
 * And That's it there you go, After a few seconds, you'll be greeted with a new repo and your playlist URL created in your account that makes the job of updating the playlist every day.
 * Now if you want to reuse the script again, Just simply run the following command 
 ```bash
-cd && cd Tata-Play-IPTV-Playlist-AutoUpdater; bash main2.sh
+cd && cd Tata-Play-IPTV-Playlist-Maker; bash main2.sh
 ```
 Now you don't need to touch anything, It updates the playlist on its own every day and you only need to Update the playlist in Tivimate.
 All the steps above are to be done only once. Please Star my repo if you've liked my work! :)
 ## How to use? User-3
 * Copy the below script and paste it in the terminal:
 ```bash
-bash <(curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-Playlist-AutoUpdater/main/curl3.sh')
+bash <(curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-Playlist-maker/main/curl3.sh')
 ```
 * Now, Enter the required details asked there.
 * Please wait until the script does the job for you.
 * And That's it there you go, After a few seconds, you'll be greeted with a new repo and your playlist URL created in your account that makes the job of updating the playlist every day.
 * Now if you want to reuse the script again, Just simply run the following command 
 ```bash
-cd && cd Tata-Play-IPTV-Playlist-AutoUpdater; bash main3.sh
+cd && cd Tata-Play-IPTV-Playlist-Maker; bash main3.sh
 ```
 Now you don't need to touch anything, It updates the playlist on its own every day and you only need to Update the playlist in Tivimate.
 All the steps above are to be done only once. Please Star my repo if you've liked my work! :)
 ## How to use? User-4
 * Copy the below script and paste it in the terminal:
 ```bash
-bash <(curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-Playlist-AutoUpdater/main/curl4.sh')
+bash <(curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-Playlist-Maker/main/curl4.sh')
 ```
 * Now, Enter the required details asked there.
 * Please wait until the script does the job for you.
 * And That's it there you go, After a few seconds, you'll be greeted with a new repo and your playlist URL created in your account that makes the job of updating the playlist every day.
 * Now if you want to reuse the script again, Just simply run the following command 
 ```bash
-cd && cd Tata-Play-IPTV-Playlist-AutoUpdater; bash main4.sh
+cd && cd Tata-Play-IPTV-Playlist-Maker; bash main4.sh
 ```
 Now you don't need to touch anything, It updates the playlist on its own every day and you only need to Update the playlist in Tivimate.
 All the steps above are to be done only once. Please Star my repo if you've liked my work! :)
 ## How to use? User-5
 * Copy the below script and paste it in the terminal:
 ```bash
-bash <(curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-Playlist-AutoUpdater/main/curl5.sh')
+bash <(curl -s 'https://raw.githubusercontent.com/Mobassar4u/Tata-Play-IPTV-Playlist-Maker/main/curl5.sh')
 ```
 * Now, Enter the required details asked there.
 * Please wait until the script does the job for you.
 * And That's it there you go, After a few seconds, you'll be greeted with a new repo and your playlist URL created in your account that makes the job of updating the playlist every day.
 * Now if you want to reuse the script again, Just simply run the following command 
 ```bash
-cd && cd Tata-Play-IPTV-Playlist-AutoUpdater; bash main5.sh
+cd && cd Tata-Play-IPTV-Playlist-Maker; bash main5.sh
 ```
 Now you don't need to touch anything, It updates the playlist on its own every day and you only need to Update the playlist in Tivimate.
 All the steps above are to be done only once. Please Star my repo if you've liked my work! :)
