@@ -203,7 +203,7 @@ ask_playlist_type()
     read -p "Select from the options above: " playlist_type;
     while true; do
     case $playlist_type in
-    '1')echo "Option 1 chosen"; break;;
+    '1')echo "Selected Playlist Type: Kodi & TiviMate Compatible"; break;;
     '2')echo "Option 2 chosen"; break;;
     *)echo "Invalid option chosen, Please try again...";;
     esac
@@ -279,7 +279,7 @@ main()
     cd Tata-Play-IPTV-India/code_samples/
     mv $LOCALDIR/userDetails.json .    
     if [[ "$playlist_type" == '2' ]]; then
-    echo "$wait Selected Playlist Type: TiviMate & OTT Navigator Compatible\n\n"
+    echo "$wait Selected Playlist Type: TiviMate & OTT Navigator Compatible"
     git revert --no-commit 25976fd59ac0a7e937a04b76e54e5eee604423f4; fi
     cat $LOCALDIR/dependencies/post_script.exp > script.exp
     chmod 755 script.exp
